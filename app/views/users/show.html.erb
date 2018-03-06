@@ -4,10 +4,10 @@
 
 </div>
 
-<main class="row">
+<main class="row" id = "show-main">
   <div class="col s4 offset-s1">
     <div class= "myevents">
-      <h4 class="card-panel grey white-text center-align">My Events</h4>
+      <h4 class="card-panel grey white-text center-align showpanel">My Events</h4>
       <!-- Events -->
       <div id="event_list">
         <% @user.events.each do |event| %>
@@ -36,7 +36,7 @@
 
   <aside class="col s6 offset-s0.5">
 
-    <h4 class="card-panel grey white-text center-align">Events around town</h4>
+    <h4 class="card-panel grey white-text center-align showpanel">Events around town</h4>
     <% @events.each do |event| %>
     <div class="row event-row card-panel grey lighten-2">
       <% random = Random.rand(1..7) %>
