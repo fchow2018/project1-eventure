@@ -12,7 +12,7 @@
       <div id="event_list">
         <% @user.events.each do |event| %>
         <div class="row event-row card-panel grey lighten-2">
-          <p class= "sidebyside col"><%= event.event_name %>   <%= event.event_date %></p>
+          <p class= "sidebyside col"><%= link_to event.event_name, event_path %> <%= event.event_date %></p>
           <%= button_to "X", {:controller => :attendance, :action => 'destroy', :id => event.id }, :method => :delete, class: "btn-floating pulse grey sidebyside col" %>
         </div>
         <% end %>
@@ -39,7 +39,7 @@
     <h4 class="card-panel grey white-text center-align">Events around town</h4>
     <% @events.each do |event| %>
     <div class="row event-row card-panel grey lighten-2">
-      <p class= "sidebyside col"><%= event.event_name %>   <%= event.event_date %></p>
+      <p class= "sidebyside col"><%= link_to event.event_name, event %>  <%= event.event_date %></p>
       <%= button_to "+", {:controller => :attendance, :action => 'create', :event_id => event.id }, :method => :create, class: "btn-floating pulse grey sidebyside col" %>
     </div>
     <% end %>

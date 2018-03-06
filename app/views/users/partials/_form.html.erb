@@ -1,5 +1,5 @@
 <div class="row">
-<div class= "col s5 offset-s7 white center-align">
+<div class= "col s5 offset-s7 white center-align sign-up">
 <%= form_for @user do |f|%>
 <h2 class ="center-align">Sign Up</h2>
 
@@ -14,7 +14,7 @@
 
     <%= f.password_field :password, placeholder: "Password" %>
 
-  <%= f.submit "Sign Up", class: "center-align white-text purple lighten-4 btn" %>
+  <%= f.submit "Sign Up", class: "center-align white-text grey lighten-2 btn" %>
   <% flash.each do |key, value| %>
   <div class="red-text alert alert-<%= key %>"><%= value %></div>
   <% end %>

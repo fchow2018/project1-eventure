@@ -17,9 +17,18 @@
 
 @import "materialize";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
-
+*{
+  font-family: 'Josefin Sans';
+}
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+}
 img{
   width: 100%;
+}
+nav{
+  position: fixed;
+  z-index: 1;
 }
 .card-panel{
   margin-top: 0;
@@ -43,13 +52,19 @@ img{
   opacity: 0.8;
 }
 footer{
-  position: fixed;
-  bottom: 0;
+  // position: fixed;
+  // bottom: 0;
   width: 100%;
-  z-index: 1;
+  margin-bottom: 0;
+  // z-index: 1;
+
+}
+footer p{
+  margin: 0 auto;
 }
 .log-in{
   margin: 5em;
+  padding: 20px;
 }
 .sidebyside{
   display: inline-block;
@@ -65,6 +80,23 @@ footer{
 .inline-button{
   display: inline-block;
 }
-.contact-us{
-  margin-bottom: 200px;
+#contact-us{
+  height: 400px;
+  margin-bottom: 0;
+}
+.event-page{
+  padding-top: 50em;
+  font-size: 20px;
+  padding-bottom: 50em;
+  height: 500px;
+  overflow-y: scroll;
+}
+.intro{
+  font-size: 2.2em;
+}
+#info p{
+  font-size: 1.2em;
+}
+main{
+  padding-top: 65px;
 }

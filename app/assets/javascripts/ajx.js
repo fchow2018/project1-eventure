@@ -38,8 +38,7 @@ let displayEvents = function(json) {
   json.events.forEach(function(event, i) {
   // console.log(event);
 
-      var eventInstance = "
-        <div class='event-section'><div class='event_item'><div class='row event-row'><p class='title sidebyside'> "+ event.name.text +"</p></div></div></div>";
+      var eventInstance = "<div class='event-section'><div class='event_item'><div class='row event-row'><p class='title sidebyside'> "+ event.name.text +"</p></div></div></div>";
 
     $("#info").append(eventInstance);
   });

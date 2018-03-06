@@ -31,8 +31,7 @@ class EventsController < ApplicationController
     end
 
     def show
-      # @event = Event.find_by_id(params[:id])
-      @events = Event.all
+      @event= Event.find_by_id(params[:id])
 
     end
 
@@ -41,6 +40,10 @@ class EventsController < ApplicationController
       @event.destroy
       flash[:notice] = "Successfully removed event."
       redirect_to user_path(current_user)
+    end
+
+    def contact
+      flash[:notice] = "We'll get back to you soon"
     end
 
 
