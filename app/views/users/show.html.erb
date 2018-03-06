@@ -39,10 +39,11 @@
     <h4 class="card-panel grey white-text center-align">Events around town</h4>
     <% @events.each do |event| %>
     <div class="row event-row card-panel grey lighten-2">
-      <p class= "sidebyside col"><%= link_to event.event_name, event %>  <%= event.event_date %></p>
-      <%= button_to "+", {:controller => :attendance, :action => 'create', :event_id => event.id }, :method => :create, class: "btn-floating pulse grey sidebyside col" %>
       <% random = Random.rand(1..7) %>
       <%= image_tag("#{random}.jpg", class: "event-image col")%>
+      <p class= "sidebyside col"><%= link_to event.event_name, event %>  <%= event.event_date %></p>
+      <%= button_to "+", {:controller => :attendance, :action => 'create', :event_id => event.id }, :method => :create, class: "btn-floating pulse grey sidebyside col" %>
+
     </div>
     <% end %>
 
