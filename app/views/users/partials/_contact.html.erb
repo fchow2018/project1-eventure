@@ -1,8 +1,9 @@
-<div class="row">
+<div class="row light-blue darken-2 valign-wrapper" id ="contact-us">
 <div class= "col s6 offset-s3 white center-align card-panel contact-us">
     <h3>Contact Us</h3>
       <input placeholder="Full Name">
       <input placeholder="Email Address">
-      <textarea>Message</textarea>
+      <input placeholder="Message">
+      <%= button_to "Submit", :method => 'contact', class: "grey sidebyside col" %>
   </div>
 </div>

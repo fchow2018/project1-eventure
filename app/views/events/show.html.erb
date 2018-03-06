@@ -1,0 +1,9 @@
+
+<main class="row">
+  <div class="col s6 offset-s3 event-page">
+<h3 class="center-align"><%= @event.event_name %></h3>
+<p class="center-align"> <%= @event.event_description %></p>
+<p><%= @event.event_date %></p>
+<%= button_to "Add", {:controller => :attendance, :action => 'create', :event_id => @event.id }, :method => :create, class: "btn grey sidebyside col" %>
+</div>
+</div>
