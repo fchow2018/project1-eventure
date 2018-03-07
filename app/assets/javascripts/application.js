@@ -18,4 +18,4 @@
 //= require materialize-sprockets
 //= require_tree .
 
-$('.carousel').carousel({shift: 150});
+$('.carousel').carousel({shift: 180});
